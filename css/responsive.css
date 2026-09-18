@@ -153,3 +153,8 @@
   .inner-page .page-hero-copy h1,.inner-page .visit-intro h1{font-size:clamp(2.45rem,11.7vw,3.05rem);max-width:10ch}
   .inner-page .editorial-intro h2,.inner-page .real-story-copy h2,.inner-page .real-gallery-section .section-head h2{font-size:clamp(2.15rem,9.6vw,2.75rem)}
 }
+
+
+/* PERINI FINAL — Ensino Médio responsive */
+@media(max-width:1080px){.em-value-grid{grid-template-columns:1fr}.em-journey-grid{grid-template-columns:1fr}.em-journey-step{min-height:auto;border-right:0;border-bottom:1px solid var(--line)}.em-journey-step:last-child{border-bottom:0}.em-ligas-areas{grid-template-columns:1fr 1fr}}
+@media(max-width:720px){.em-value-section,.em-journey-section{padding:4.5rem 0}.em-value-card,.em-journey-step{padding:1.35rem}.em-ligas-areas{grid-template-columns:1fr}.em-ligas-outcomes{display:grid;grid-template-columns:1fr}.em-ligas-outcomes span{text-align:left}.ensino-medio-page .page-hero-media{aspect-ratio:1/1}.ensino-medio-page .page-hero-media img{object-position:center 45%}}

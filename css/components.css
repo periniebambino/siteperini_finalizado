@@ -223,3 +223,31 @@ body.campaign-active .hero{padding-top:168px}
 .inner-page .real-gallery-card img{object-fit:cover}
 /* CTA final: conteúdo enxuto e altura guiada pela copy, não por espaço vazio. */
 .inner-page .page-cta-inner{min-height:0}
+
+
+/* PERINI FINAL — Ensino Médio: proposta de valor, jornada e Projeto Ligas */
+.em-value-section{padding:clamp(4.5rem,7vw,6.5rem) 0;background:var(--surface)}
+.em-value-intro{max-width:800px;margin-bottom:2.2rem}
+.em-value-intro h2,.em-journey-head h2{margin:.7rem 0 1rem}
+.em-value-intro p,.em-journey-step p{color:var(--muted)}
+.em-value-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.em-value-card{padding:1.6rem;border:1px solid var(--line);border-radius:24px;background:#fff;box-shadow:var(--shadow-sm)}
+.em-value-card>span{display:block;color:var(--orange);font-weight:900;font-size:.78rem;margin-bottom:1rem}
+.em-value-card h3{margin:0 0 .6rem;font-size:1.45rem}
+.em-value-card p{margin:0;color:var(--muted)}
+.em-academic-positioning{margin-top:1.4rem;padding-top:1.2rem;border-top:1px solid var(--line);font-weight:700;color:var(--ink)!important}
+.em-journey-section{padding:clamp(4.5rem,7vw,6.5rem) 0;background:#fff}
+.em-journey-head{max-width:760px;margin-bottom:2rem}
+.em-journey-grid{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:28px;overflow:hidden;background:#fff}
+.em-journey-step{padding:2rem;min-height:230px;border-right:1px solid var(--line)}
+.em-journey-step:last-child{border-right:0}
+.em-journey-step>span{display:block;color:var(--orange);font-size:.8rem;font-weight:900;text-transform:uppercase;letter-spacing:.04em;margin-bottom:1rem}
+.em-journey-step h3{font-size:1.45rem;margin:0 0 .8rem}
+.story-note{margin-top:1rem!important;font-size:.98rem!important}
+.em-ligas-headline{font-size:clamp(1.4rem,2.1vw,2rem);margin:1rem 0 .7rem;color:#fff}
+.em-ligas-panel{display:grid;gap:1rem}
+.em-ligas-areas{display:grid;grid-template-columns:1fr 1fr;gap:.7rem}
+.em-ligas-areas>div{padding:1rem 1.05rem;border:1px solid rgba(255,255,255,.15);border-radius:18px;background:rgba(255,255,255,.055);font-weight:780;color:#fff}
+.em-ligas-outcomes{display:flex;flex-wrap:wrap;gap:.55rem;padding-top:.25rem}
+.em-ligas-outcomes span{padding:.55rem .75rem;border-radius:999px;background:rgba(255,255,255,.1);font-size:.78rem;font-weight:800;color:#edf6fc}
+.page-cta-summary{margin-top:.75rem!important}
