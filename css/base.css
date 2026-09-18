@@ -1,0 +1,77 @@
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;font-family:"Avenir Next",Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);background:#fff;line-height:1.55;-webkit-font-smoothing:antialiased}body.menu-open{overflow:hidden}img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{font:inherit}h1,h2,h3,p{margin-top:0}h1,h2,h3{font-weight:800;color:var(--ink);letter-spacing:-.045em;line-height:.98}h1{font-size:clamp(4rem,7.5vw,7.4rem)}h2{font-size:clamp(2.45rem,5.1vw,5.15rem)}h3{font-size:clamp(1.45rem,2.4vw,2.35rem)}p{font-size:clamp(1rem,1.25vw,1.13rem)}.container{width:var(--container);margin-inline:auto}.section{padding:clamp(5.3rem,9vw,9rem) 0}.section-head{max-width:860px;margin-bottom:clamp(2.4rem,5vw,4.4rem)}.section-head>p{max-width:680px;color:var(--muted)}.split-head{max-width:none;display:grid;grid-template-columns:1.15fr .85fr;gap:5rem;align-items:end}.split-head>p{margin:0 0 .6rem}.kicker,.eyebrow{display:inline-flex;align-items:center;gap:.65rem;text-transform:uppercase;letter-spacing:.13em;font-weight:900;font-size:.76rem;color:var(--blue-800);margin-bottom:1.1rem}.kicker:before{content:"";width:28px;height:2px;border-radius:99px;background:var(--orange)}.kicker-light{color:#bfe9ff}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 1.45rem;border-radius:999px;font-weight:850;letter-spacing:-.01em;border:1px solid transparent;transition:.28s var(--ease)}.btn:hover{transform:translateY(-2px)}.btn-sm{min-height:44px;padding:0 1.05rem;font-size:.9rem}.btn-lg{min-height:62px;padding:0 1.8rem}.btn-primary{background:var(--orange);color:#fff;box-shadow:0 14px 36px rgba(255,105,0,.26)}.btn-primary:hover{box-shadow:0 18px 42px rgba(255,105,0,.32)}.btn-outline{background:rgba(255,255,255,.7);border-color:var(--line);color:var(--blue-950)}.btn-ghost{border-color:var(--line);color:var(--blue-950)}.btn-white{background:#fff;color:var(--blue-950)}.text-link{display:inline-flex;align-items:center;gap:.55rem;font-weight:850;color:var(--blue-800)}.text-link.light{color:#fff}[data-reveal]{opacity:0;transform:translateY(20px);transition:opacity .7s var(--ease),transform .7s var(--ease)}[data-reveal].is-visible{opacity:1;transform:none}.skip-link{position:fixed;left:16px;top:-100px;background:#fff;padding:.8rem 1rem;z-index:9999;border-radius:12px;box-shadow:var(--shadow-sm)}.skip-link:focus{top:16px}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}[data-reveal]{opacity:1;transform:none}}
+
+:where(a,button,summary):focus-visible{outline:3px solid rgba(246,109,14,.38);outline-offset:4px;border-radius:8px}
+button{cursor:pointer}
+iframe{border:0}
+::selection{background:rgba(60,169,226,.22);color:var(--ink)}
+
+/* V3.3 — equilíbrio editorial sem quebras manuais */
+.hero-title,.section-head h2,.page-hero-copy h1,.editorial-intro h2,.reasons-intro h2,.real-story-copy h2,.page-cta h2,.final-cta h2,.contact-copy h2,.visit-intro h1{text-wrap:balance}.hero-intro,.section-head>p,.page-hero-copy>p,.editorial-intro>p,.real-story-copy>p,.page-cta p,.final-cta p,.contact-copy>p,.visit-intro>p{text-wrap:pretty}
+
+
+/* MASTER v2.1 — escala editorial por contexto.
+   A copy é escrita para a composição; font-size não é usado para salvar título excessivo. */
+.title-lg{font-size:clamp(2.6rem,4.35vw,4.65rem);line-height:.98;letter-spacing:-.042em;max-width:18ch;text-wrap:balance}
+.title-md{font-size:clamp(2.25rem,3.45vw,3.7rem);line-height:1;letter-spacing:-.038em;max-width:19ch;text-wrap:balance}
+@media(max-width:720px){
+  .title-lg{font-size:clamp(2.45rem,10.6vw,3.55rem);max-width:15ch}
+  .title-md{font-size:clamp(2.2rem,9.4vw,3.15rem);max-width:16ch}
+}
+
+/* MASTER v2.7 — TITLE SYSTEM
+   Normalização tipográfica por função. Mantém a personalidade aprovada,
+   mas evita H1/H2 arbitrários, linhas órfãs e massas desproporcionais. */
+.inner-page .page-hero-copy h1,
+.inner-page .visit-intro h1{
+  font-size:clamp(3.15rem,5vw,5.25rem);
+  line-height:.96;
+  letter-spacing:-.05em;
+  max-width:12ch;
+  margin-bottom:1.15rem;
+  text-wrap:balance;
+}
+.inner-page .editorial-intro h2,
+.inner-page .real-story-copy h2,
+.inner-page .real-gallery-section .section-head h2{
+  font-size:clamp(2.55rem,4vw,4.25rem);
+  line-height:.99;
+  letter-spacing:-.04em;
+  max-width:15ch;
+  text-wrap:balance;
+}
+.inner-page .content-band h2{
+  font-size:clamp(2.35rem,3.45vw,3.65rem);
+  line-height:1;
+  letter-spacing:-.038em;
+  max-width:18ch;
+  text-wrap:balance;
+}
+.inner-page .page-cta h2{
+  font-size:clamp(2.25rem,3.25vw,3.45rem);
+  line-height:1;
+  letter-spacing:-.036em;
+  max-width:18ch;
+  text-wrap:balance;
+}
+.inner-page .editorial-item h3,
+.inner-page .structure-page-card h3{
+  font-size:clamp(1.32rem,1.65vw,1.7rem);
+  line-height:1.08;
+  letter-spacing:-.025em;
+  text-wrap:balance;
+}
+.inner-page .page-hero-copy>p,
+.inner-page .editorial-intro>p,
+.inner-page .content-band p,
+.inner-page .page-cta p,
+.inner-page .visit-intro>p{
+  text-wrap:pretty;
+}
+/* Heroes dos ciclos já aprovados: a v2.6 continua soberana. */
+.inner-page .cycle-hero .page-hero-copy h1{
+  font-size:clamp(3.35rem,5.15vw,5.45rem);
+  line-height:.94;
+  max-width:10.8ch;
+}
+/* Contato: H1 de contexto, não um outdoor. */
+.inner-page.contact-page .visit-intro h1{max-width:10.5ch}

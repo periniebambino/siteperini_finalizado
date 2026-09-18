@@ -1,0 +1,271 @@
+/* Colégio Perini — Release Candidate 1
+   Camada cirúrgica para fotografia real, página Estrutura, COC e Contato.
+   Não substitui o design system existente. */
+
+/* ---------- HOME: provas fotográficas reais ---------- */
+.essence-real-proof,
+.home-structure-real-proof,
+.history-facade-proof,
+.home-coc-real-proof,
+.contact-facade-proof,
+.coc-real-use-proof,
+.structure-real-card{margin:0}
+
+.essence-real-proof{
+  display:grid;
+  grid-template-columns:minmax(0,1.35fr) minmax(230px,.65fr);
+  align-items:end;
+  gap:1.2rem;
+  margin:0 0 2.4rem;
+  padding:1rem;
+  border:1px solid var(--line);
+  border-radius:var(--r-lg);
+  background:var(--surface);
+  overflow:hidden;
+}
+.essence-real-proof picture{display:block;overflow:hidden;border-radius:calc(var(--r-lg) - 10px)}
+.essence-real-proof img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:center 42%}
+.essence-real-proof figcaption{padding:1rem .6rem 1rem .2rem;color:var(--ink);font-size:clamp(1.1rem,1.9vw,1.55rem);font-weight:850;line-height:1.18;text-wrap:balance}
+
+.history-facade-proof{
+  display:grid;
+  grid-template-columns:150px 1fr;
+  gap:.9rem;
+  align-items:center;
+  margin-top:1.5rem;
+  padding:.8rem;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:#fff;
+}
+.history-facade-proof picture{overflow:hidden;border-radius:12px}
+.history-facade-proof img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;object-position:center}
+.history-facade-proof figcaption{color:var(--muted);font-size:.82rem;font-weight:800;line-height:1.4}
+
+.home-coc-real-proof{
+  margin-top:1.8rem;
+  max-width:560px;
+  border-radius:24px;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.12);
+  background:rgba(255,255,255,.05)
+}
+.home-coc-real-proof picture{display:block}
+.home-coc-real-proof img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:center 48%}
+.home-coc-real-proof figcaption{padding:.8rem 1rem;color:#dbeaf6;font-size:.78rem;font-weight:760}
+
+.home-structure-real-proof{
+  position:relative;
+  margin:0 0 2.1rem;
+  overflow:hidden;
+  border-radius:var(--r-lg);
+  background:var(--surface);
+}
+.home-structure-real-proof img{display:block;width:100%;height:auto;aspect-ratio:16/8.6;object-fit:cover;object-position:center 52%}
+.home-structure-real-proof figcaption{
+  position:absolute;left:1rem;bottom:1rem;
+  max-width:320px;padding:.72rem .9rem;border-radius:14px;
+  background:rgba(5,45,91,.80);color:#fff;font-size:.78rem;font-weight:800;
+  backdrop-filter:blur(8px)
+}
+
+/* ---------- ESTRUTURA: ambientes reais ---------- */
+.structure-page .page-hero-media picture{display:block;width:100%;height:100%}
+.structure-page .page-hero-media img{
+  width:100%;height:100%;object-fit:cover;object-position:center 48%;background:#fff
+}
+
+.structure-page .editorial-section:first-of-type .editorial-intro{grid-column:1;grid-row:1 / span 2}
+.structure-page .editorial-section:first-of-type .structure-real-grid{grid-column:2;grid-row:1}
+.structure-page .editorial-section:first-of-type .structure-page-grid{grid-column:2;grid-row:2}
+
+.structure-real-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:1rem;
+  margin-bottom:1rem
+}
+.structure-real-card{
+  position:relative;overflow:hidden;min-height:250px;border-radius:26px;background:var(--surface);border:1px solid var(--line)
+}
+.structure-real-card.wide{grid-column:1/-1;min-height:330px}
+.structure-real-card picture{display:block;width:100%;height:100%}
+.structure-real-card img{display:block;width:100%;height:100%;min-height:250px;object-fit:cover;object-position:center}
+.structure-real-card.wide img{min-height:330px;object-position:center 50%}
+.structure-real-card figcaption{
+  position:absolute;left:.85rem;right:.85rem;bottom:.85rem;
+  padding:.68rem .82rem;border-radius:13px;background:rgba(4,43,88,.82);color:#fff;
+  font-size:.78rem;font-weight:820;backdrop-filter:blur(8px)
+}
+
+/* ---------- COC: prova real + galeria com propósito ---------- */
+.coc-real-use-column{display:grid;gap:1rem}
+.coc-real-use-proof{overflow:hidden;border-radius:24px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.05)}
+.coc-real-use-proof picture{display:block}
+.coc-real-use-proof img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:center 48%}
+.coc-real-use-proof figcaption{padding:.72rem .9rem;color:#dceaf5;font-size:.76rem;font-weight:760}
+
+.coc-page .coc-art-gallery-head{
+  grid-template-columns:minmax(0,.9fr) minmax(320px,.62fr);
+  align-items:end;
+  margin-bottom:1.65rem
+}
+.coc-page .coc-art-gallery-head h2{max-width:14ch;font-size:clamp(2.4rem,3.8vw,4rem);line-height:1;letter-spacing:-.04em;text-wrap:balance}
+.coc-page .coc-art-gallery-head p{max-width:56ch;line-height:1.65}
+.coc-stage-tabs{display:flex;gap:.7rem;flex-wrap:wrap;margin-bottom:.8rem}
+.coc-stage-tabs button{
+  appearance:none;border:1px solid var(--line);background:#fff;color:var(--blue-800);
+  min-height:44px;padding:.68rem 1.05rem;border-radius:999px;font:inherit;font-size:.82rem;font-weight:880;cursor:pointer;
+  transition:background .2s var(--ease),color .2s var(--ease),border-color .2s var(--ease)
+}
+.coc-stage-tabs button.is-active{background:var(--blue-800);border-color:var(--blue-800);color:#fff}
+.coc-stage-tabs button:focus-visible{outline:3px solid rgba(246,109,14,.28);outline-offset:3px}
+.coc-stage-summary{min-height:30px;margin-bottom:1rem}
+.coc-stage-summary p{margin:0;color:var(--green-700,#6d9629);font-size:.84rem;font-weight:850}
+.coc-page .coc-art-gallery-track[hidden]{display:none!important}
+.coc-page .coc-art-card{background:transparent;border:0;box-shadow:0 12px 34px rgba(7,61,119,.09)}
+.coc-page .coc-art-card img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:contain;background:#fff;border-radius:20px}
+
+/* ---------- CONTATO: prova de localização ---------- */
+.contact-facade-proof{
+  display:grid;grid-template-columns:minmax(0,1.4fr) minmax(220px,.6fr);gap:1.1rem;align-items:center;
+  margin-top:1.5rem;padding:1rem;border:1px solid var(--line);border-radius:28px;background:#fff
+}
+.contact-facade-proof picture{display:block;overflow:hidden;border-radius:20px}
+.contact-facade-proof img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;object-position:center}
+.contact-facade-proof figcaption{padding:.4rem;color:var(--muted);font-size:.85rem;font-weight:780;line-height:1.5}
+
+/* ---------- Responsividade RC1 ---------- */
+@media(max-width:1080px){
+  .structure-page .editorial-section:first-of-type .editorial-intro,
+  .structure-page .editorial-section:first-of-type .structure-real-grid,
+  .structure-page .editorial-section:first-of-type .structure-page-grid{grid-column:auto;grid-row:auto}
+  .structure-page .editorial-section:first-of-type .editorial-intro{position:static}
+  .coc-page .coc-art-gallery-head{grid-template-columns:1fr;gap:1rem}
+}
+
+@media(max-width:768px){
+  .essence-real-proof{grid-template-columns:1fr;padding:.75rem;gap:.35rem}
+  .essence-real-proof img{aspect-ratio:4/3;object-position:center 42%}
+  .essence-real-proof figcaption{padding:.8rem .6rem .9rem;font-size:1.15rem}
+  .history-facade-proof{grid-template-columns:112px 1fr}
+  .home-coc-real-proof img{aspect-ratio:4/3}
+  .home-structure-real-proof img{aspect-ratio:4/3;object-position:center 50%}
+  .home-structure-real-proof figcaption{left:.75rem;right:.75rem;bottom:.75rem;max-width:none}
+
+  .structure-page .page-hero-media{aspect-ratio:auto!important;height:auto!important}
+  .structure-page .page-hero-media picture{height:auto}
+  .structure-page .page-hero-media img{height:auto;aspect-ratio:3/2;object-fit:cover;object-position:center}
+  .structure-real-grid{grid-template-columns:1fr}
+  .structure-real-card.wide{grid-column:auto;min-height:260px}
+  .structure-real-card,.structure-real-card.wide{min-height:260px;border-radius:22px}
+  .structure-real-card img,.structure-real-card.wide img{min-height:260px;aspect-ratio:4/3;object-fit:cover}
+
+  .coc-real-use-proof img{aspect-ratio:4/3;object-position:center}
+  .coc-page .coc-art-gallery-head h2{font-size:clamp(2.15rem,9.2vw,2.9rem);max-width:11.5ch}
+  .coc-page .coc-art-gallery-head p{font-size:.98rem;max-width:34ch}
+  .coc-stage-tabs{display:grid;grid-template-columns:1fr 1fr;gap:.55rem}
+  .coc-stage-tabs button{width:100%;padding:.7rem .55rem}
+  .coc-page .coc-art-gallery-track{grid-auto-columns:min(84vw,330px);gap:.85rem;scroll-padding-left:.1rem}
+  .coc-page .coc-art-gallery-buttons{display:none}
+
+  .contact-facade-proof{grid-template-columns:1fr;padding:.75rem;border-radius:24px}
+  .contact-facade-proof img{aspect-ratio:3/2}
+  .contact-facade-proof figcaption{padding:.65rem .45rem}
+}
+
+@media(max-width:430px){
+  .history-facade-proof{grid-template-columns:1fr}
+  .history-facade-proof img{aspect-ratio:16/9}
+  .structure-real-card,.structure-real-card.wide{min-height:230px}
+  .structure-real-card img,.structure-real-card.wide img{min-height:230px}
+  .coc-page .coc-art-gallery-track{grid-auto-columns:86%;}
+}
+
+/* ---------- TITLE SYSTEM — acabamento final sem alterar arquitetura ---------- */
+@media(min-width:1081px){
+  .inner-page:not(.cycle-page) .page-hero-copy h1,
+  .inner-page.coc-page .page-hero-copy h1,
+  .inner-page.structure-page .page-hero-copy h1{
+    font-size:clamp(3.55rem,4.55vw,4.6rem);
+    line-height:.98;
+    max-width:14ch;
+    text-wrap:balance;
+  }
+  .inner-page .editorial-intro h2,
+  .inner-page .real-story-copy h2,
+  .inner-page .content-band h2{
+    font-size:clamp(2.35rem,3.05vw,3.15rem);
+    line-height:1.02;
+    max-width:18ch;
+    text-wrap:balance;
+  }
+  .inner-page .page-cta h2{
+    font-size:clamp(2.25rem,2.8vw,2.9rem);
+    line-height:1.04;
+    max-width:18ch;
+    text-wrap:balance;
+  }
+  .contact-page .visit-intro h1{
+    font-size:clamp(3.35rem,4.2vw,4.35rem);
+    line-height:.99;
+    max-width:13ch;
+    text-wrap:balance;
+  }
+}
+@media(max-width:1080px){
+  .inner-page .editorial-intro h2,
+  .inner-page .real-story-copy h2,
+  .inner-page .content-band h2,
+  .inner-page .page-cta h2{
+    font-size:clamp(2.2rem,5.3vw,2.8rem);
+    line-height:1.03;
+    max-width:18ch;
+    text-wrap:balance;
+  }
+  .inner-page:not(.cycle-page) .page-hero-copy h1,
+  .inner-page.coc-page .page-hero-copy h1,
+  .inner-page.structure-page .page-hero-copy h1{
+    max-width:14ch;
+    text-wrap:balance;
+  }
+}
+@media(max-width:720px){
+  .inner-page .editorial-intro h2,
+  .inner-page .real-story-copy h2,
+  .inner-page .content-band h2,
+  .inner-page .page-cta h2{
+    font-size:clamp(2rem,8.6vw,2.42rem);
+    line-height:1.03;
+    max-width:15ch;
+  }
+  .inner-page:not(.cycle-page) .page-hero-copy h1,
+  .inner-page.coc-page .page-hero-copy h1,
+  .inner-page.structure-page .page-hero-copy h1,
+  .contact-page .visit-intro h1{
+    font-size:clamp(2.35rem,10.6vw,2.9rem);
+    line-height:.98;
+    max-width:13ch;
+  }
+}
+
+/* Corrige a precedência da regra v2.7 nos heroes internos não-ciclo em tablet/mobile. */
+@media(max-width:1080px){
+  .inner-page:not(.coc-page) .page-hero:not(.cycle-hero) .page-hero-layout{
+    grid-template-columns:1fr;
+    gap:2.15rem;
+  }
+  .inner-page:not(.coc-page) .page-hero:not(.cycle-hero) .page-hero-copy{
+    width:100%;max-width:760px;
+  }
+  .inner-page:not(.coc-page) .page-hero:not(.cycle-hero) .page-hero-media{
+    width:100%;max-width:900px;
+  }
+}
+
+/* Tablet: impedir overflow visual legado em história real e CTA final. */
+@media(max-width:1080px){
+  .inner-page .real-story-games img{transform:none;object-position:center 62%}
+  .inner-page .page-cta-inner{display:grid;grid-template-columns:1fr;align-items:start}
+  .inner-page .page-cta-actions{justify-content:start}
+}

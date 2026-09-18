@@ -1,0 +1,141 @@
+/* MASTER v2.6.1 — atualização cirúrgica exclusiva da página Sistema COC. */
+.coc-page .coc-hero-video{
+  aspect-ratio:16/9;
+  background:transparent;
+  box-shadow:none;
+  overflow:visible;
+}
+.coc-page .coc-hero-video .coc-hero-video-facade{
+  width:100%;
+  height:100%;
+  border-radius:18px 58px 58px 58px;
+}
+.coc-page .coc-hero-video .coc-video-cover{
+  z-index:0;
+  transform:none;
+}
+.coc-page .coc-hero-video .coc-video-facade:before{
+  z-index:1;
+  background:linear-gradient(180deg,rgba(3,21,48,.08) 0%,rgba(3,21,48,.03) 45%,rgba(3,21,48,.62) 100%);
+}
+.coc-page .coc-hero-video .coc-video-badge,
+.coc-page .coc-hero-video .coc-video-play-icon,
+.coc-page .coc-hero-video .coc-video-facade-copy{z-index:3}
+
+.coc-art-gallery{
+  padding:clamp(4.8rem,8vw,7.5rem) 0;
+  background:#fff;
+  overflow:hidden;
+}
+.coc-art-gallery-head{
+  display:grid;
+  grid-template-columns:minmax(0,.82fr) minmax(320px,.58fr);
+  gap:clamp(2rem,5vw,5rem);
+  align-items:end;
+  margin-bottom:2.2rem;
+}
+.coc-art-gallery-head h2{
+  font-size:clamp(2.45rem,4.5vw,4.65rem);
+  line-height:.98;
+  letter-spacing:-.045em;
+  text-wrap:balance;
+  margin:.65rem 0 0;
+  max-width:12ch;
+}
+.coc-art-gallery-head p{
+  color:var(--muted);
+  font-size:clamp(1rem,1.25vw,1.12rem);
+  line-height:1.6;
+  max-width:50ch;
+  margin:0;
+}
+.coc-art-gallery-shell{position:relative}
+.coc-art-gallery-track{
+  display:grid;
+  grid-auto-flow:column;
+  grid-auto-columns:clamp(240px,24vw,310px);
+  gap:1rem;
+  overflow-x:auto;
+  overscroll-behavior-inline:contain;
+  scroll-snap-type:inline mandatory;
+  scroll-behavior:smooth;
+  scrollbar-width:thin;
+  scrollbar-color:rgba(11,78,144,.22) transparent;
+  padding:.35rem .1rem 1.2rem;
+}
+.coc-art-card{
+  scroll-snap-align:start;
+  margin:0;
+  border-radius:24px;
+  overflow:hidden;
+  background:var(--surface-blue);
+  box-shadow:0 14px 42px rgba(7,61,119,.09);
+  border:1px solid rgba(11,78,144,.07);
+}
+.coc-art-card img{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:3/4;
+  object-fit:cover;
+}
+.coc-art-card figcaption{
+  padding:.85rem 1rem .95rem;
+  font-size:.76rem;
+  line-height:1.35;
+  font-weight:850;
+  color:var(--blue-800);
+  background:#fff;
+}
+.coc-art-gallery-controls{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+  margin-top:.4rem;
+}
+.coc-art-gallery-controls small{color:var(--muted);font-size:.78rem;font-weight:750}
+.coc-art-gallery-buttons{display:flex;gap:.55rem}
+.coc-art-gallery-buttons button{
+  width:44px;height:44px;border-radius:50%;border:1px solid var(--line);
+  background:#fff;color:var(--blue-800);font:inherit;font-weight:900;cursor:pointer;
+  box-shadow:0 8px 22px rgba(7,61,119,.07);
+  transition:transform .2s var(--ease),border-color .2s var(--ease),background .2s var(--ease)
+}
+.coc-art-gallery-buttons button:hover{transform:translateY(-2px);border-color:rgba(11,78,144,.26);background:var(--surface-blue)}
+.coc-art-gallery-buttons button:focus-visible{outline:3px solid rgba(246,109,14,.28);outline-offset:3px}
+
+@media(max-width:1080px){
+  .coc-page .coc-hero-video{max-width:900px}
+  .coc-art-gallery-head{grid-template-columns:1fr;gap:1rem}
+  .coc-art-gallery-head h2{max-width:14ch}
+  .coc-art-gallery-head p{max-width:62ch}
+  .coc-art-gallery-track{grid-auto-columns:clamp(235px,38vw,300px)}
+}
+@media(max-width:720px){
+  .coc-page .page-hero-actions{display:flex}
+  .coc-page .page-hero-actions .btn{width:auto}
+  .coc-page .coc-hero-video{aspect-ratio:16/9;height:auto;border-radius:14px 34px 34px 34px}
+  .coc-page .coc-hero-video .coc-hero-video-facade{border-radius:14px 34px 34px 34px}
+  .coc-page .coc-hero-video .coc-video-badge{top:1rem;left:1rem}
+  .coc-page .coc-hero-video .coc-video-play-icon{width:68px;height:68px}
+  .coc-page .coc-hero-video .coc-video-facade-copy{left:1rem;right:1rem;bottom:1rem}
+  .coc-art-gallery{padding:4.5rem 0}
+  .coc-art-gallery-head{margin-bottom:1.6rem}
+  .coc-art-gallery-head h2{font-size:clamp(2.25rem,10vw,3.35rem);max-width:11ch}
+  .coc-art-gallery-track{grid-auto-columns:84%;gap:.8rem;padding-bottom:1rem}
+  .coc-art-gallery-controls small{font-size:.72rem}
+  .coc-art-gallery-buttons{display:none}
+}
+
+/* MASTER v2.7 — refinamento de escala da página COC sem alterar sua arquitetura. */
+.coc-page .page-hero-copy h1{max-width:11.5ch}
+.coc-page .coc-hero-video{align-self:center}
+.coc-page .coc-art-gallery-head h2{font-size:clamp(2.55rem,4vw,4.15rem);max-width:13ch}
+.coc-page .coc-art-gallery-track{grid-auto-columns:clamp(235px,22vw,292px);gap:1.1rem}
+.coc-page .coc-art-card{border-radius:20px}
+@media(max-width:720px){
+  .coc-page .page-hero-copy h1{max-width:10ch}
+  .coc-page .coc-art-gallery-head h2{font-size:clamp(2.2rem,9.5vw,3rem);max-width:12ch}
+  .coc-page .coc-art-gallery-track{grid-auto-columns:86%;gap:.85rem}
+}
