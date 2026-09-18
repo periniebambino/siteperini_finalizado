@@ -158,3 +158,31 @@
 /* PERINI FINAL — Ensino Médio responsive */
 @media(max-width:1080px){.em-value-grid{grid-template-columns:1fr}.em-journey-grid{grid-template-columns:1fr}.em-journey-step{min-height:auto;border-right:0;border-bottom:1px solid var(--line)}.em-journey-step:last-child{border-bottom:0}.em-ligas-areas{grid-template-columns:1fr 1fr}}
 @media(max-width:720px){.em-value-section,.em-journey-section{padding:4.5rem 0}.em-value-card,.em-journey-step{padding:1.35rem}.em-ligas-areas{grid-template-columns:1fr}.em-ligas-outcomes{display:grid;grid-template-columns:1fr}.em-ligas-outcomes span{text-align:left}.ensino-medio-page .page-hero-media{aspect-ratio:1/1}.ensino-medio-page .page-hero-media img{object-position:center 45%}}
+
+/* ===== PERINI FINAL VISUAL 2026 — responsive ===== */
+@media(max-width:1080px){
+  .home-final-hero .hero-layout{grid-template-columns:1fr;gap:2rem}
+  .home-final-hero .hero-copy{max-width:760px}
+  .home-final-hero .hero-visual{max-width:900px}
+  .stage-cover-grid{grid-template-columns:1fr 1fr}
+  .stage-cover-em{grid-column:1/-1;max-width:680px;width:100%;justify-self:center}
+  .em-experience-proof-inner{grid-template-columns:1fr;gap:2rem}
+  .em-experience-proof picture{max-width:620px}
+}
+@media(max-width:720px){
+  .home-final-hero .hero-actions{grid-template-columns:1fr}
+  .home-final-hero .hero-actions .btn{width:100%}
+  .home-final-hero .hero-image-wrap{aspect-ratio:4/3;border-radius:16px 34px 34px 34px}
+  .home-final-hero .hero-image-wrap:before{display:none}
+  .home-final-hero .hero-image-wrap img{object-position:center center}
+  .home-final-hero .hero-note{margin:-14px 10px 0}
+  .stage-cover-grid{grid-template-columns:1fr;gap:1rem}
+  .stage-cover-em{grid-column:auto;max-width:none}
+  .stage-cover-card{border-radius:18px}
+  .stage-cover-card>span{padding:.9rem 1rem;font-size:.9rem}
+  .inner-page .cycle-hero .page-hero-media{aspect-ratio:auto;height:auto;border-radius:16px 30px 30px 30px}
+  .inner-page .cycle-hero .page-hero-media img{width:100%;height:auto;object-fit:contain}
+  .em-experience-proof{padding:4.5rem 0}
+  .em-experience-proof picture{max-width:none;border-radius:16px 34px 34px 34px}
+  .em-experience-proof h2{font-size:clamp(2.1rem,10vw,3.35rem)}
+}

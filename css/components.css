@@ -251,3 +251,33 @@ body.campaign-active .hero{padding-top:168px}
 .em-ligas-outcomes{display:flex;flex-wrap:wrap;gap:.55rem;padding-top:.25rem}
 .em-ligas-outcomes span{padding:.55rem .75rem;border-radius:999px;background:rgba(255,255,255,.1);font-size:.78rem;font-weight:800;color:#edf6fc}
 .page-cta-summary{margin-top:.75rem!important}
+
+/* ===== PERINI FINAL VISUAL 2026 — scoped release overrides ===== */
+.home-final-hero .hero-title span:nth-child(3){color:var(--blue-950)}
+.home-final-hero .hero-layout{grid-template-columns:minmax(0,.82fr) minmax(520px,1.18fr);gap:clamp(2.25rem,4.5vw,5rem)}
+.home-final-hero .hero-image-wrap{aspect-ratio:4/3;border-radius:20px 58px 58px 58px;background:#fff}
+.home-final-hero .hero-image-wrap img{object-fit:cover;object-position:center 48%;transform:none}
+.home-final-hero .hero-image-wrap:before{width:27%;height:100%;background:linear-gradient(90deg,rgba(255,255,255,.94) 0%,rgba(255,255,255,.62) 40%,rgba(255,255,255,0) 100%)}
+.home-final-hero .hero-note{left:-24px;bottom:24px}
+.home-final-hero .btn-secondary{background:#fff;color:var(--blue-950);border:1px solid rgba(6,56,105,.28)}
+.home-final-hero .btn-secondary:hover{border-color:var(--blue-700);transform:translateY(-1px)}
+
+.stage-covers-section{background:linear-gradient(180deg,#f7fafc 0%,#fff 100%)}
+.stage-covers-section .section-head{margin-bottom:2.1rem}
+.stage-cover-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(1rem,2vw,1.5rem)}
+.stage-cover-card{display:flex;flex-direction:column;background:#fff;border:1px solid rgba(11,78,144,.08);border-radius:24px;overflow:hidden;box-shadow:0 16px 48px rgba(5,46,97,.09);transition:transform .25s var(--ease),box-shadow .25s var(--ease)}
+.stage-cover-card:hover{transform:translateY(-3px);box-shadow:0 22px 58px rgba(5,46,97,.13)}
+.stage-cover-card img{display:block;width:100%;height:auto;aspect-ratio:1586/992;object-fit:contain;background:#fff}
+.stage-cover-card>span{display:flex;align-items:center;justify-content:space-between;gap:.75rem;padding:1rem 1.15rem 1.08rem;font-weight:900;font-size:.92rem;color:var(--blue-900);border-top:1px solid var(--line)}
+.stage-cover-f1>span{color:#0877c9}.stage-cover-f2>span{color:#087f43}.stage-cover-em>span{color:#e85d00}
+.stage-cover-card b{font-size:1.15rem}
+
+.inner-page .cycle-hero .page-hero-media{aspect-ratio:1586/992;background:#fff}
+.inner-page .cycle-hero .page-hero-media img{width:100%;height:100%;object-fit:contain;object-position:center;background:#fff}
+
+.em-experience-proof{padding:clamp(4rem,7vw,7rem) 0;background:#fff}
+.em-experience-proof-inner{display:grid;grid-template-columns:minmax(340px,.82fr) minmax(0,1.18fr);gap:clamp(2rem,6vw,6rem);align-items:center}
+.em-experience-proof picture{display:block;border-radius:22px 54px 54px 54px;overflow:hidden;box-shadow:var(--shadow);background:var(--surface-blue);max-width:520px}
+.em-experience-proof img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;object-position:center 42%}
+.em-experience-proof h2{font-size:clamp(2rem,4vw,4.1rem);line-height:1.02;margin:.7rem 0 1rem;max-width:15ch;text-wrap:balance}
+.em-experience-proof p{max-width:640px;color:var(--muted);font-size:clamp(1rem,1.35vw,1.15rem)}
